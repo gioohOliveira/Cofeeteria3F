@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cont.css">
+
+    <script type="text/javascript">
+
+
+        function mensagem() {
+          var n1 = document.getElementById("dadosE").value;
+          if (n1==""){
+                    window.alert ("Não é possível enviar");
+                     document.getElementById("dadosE").focus();
+                          return false
+          }
+          else {
+            window.alert ("Enviando...");
+                        return true
+          }   
+        }
+         
+    
+    
+              function botao()  {
+                  window.location.href = "Coffeeteria.html";
+                     window.alert ("Agradecemos!");
+                }
+
+              </script>
+
+
+    
+</head>
+<body>
+   
+    <header>
+        <img src="Logo.png" alt="logo" class="logo">
+        <nav>
+            <ul  class="active" id="menu">
+                <li><a href="Coffeeteria.html">Início</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="sobre_nos.html">Sobre nós</a></li>
+                <li><a href="Cont.html">Feedback</a></li>
+                <li><a href="App.html">App Coffee</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center; font-weight: bold  ;" class="borda">
+            <h1 style="text-align: center">☕ Contato ☕</h1> <br>
+
+            <form action="Coffeeteria.html" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="dadosE" name="name" placeholder="Digite o nome" required>
+                <br> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="" name="email" placeholder="Digite o email" required>
+                <br />
+                <img src="Logo.png" alt="logo" class="logo2">
+                <br />
+                <label for="email">Fale Conosco!</label>  <br>
+                 <label for="message"  style="text-align: center"> Deixe sua mensagem:</label> 
+                  <br> <br>  
+                  <textarea id="dadosE" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                 <br>
+                 <br />
+                <button type="submit"  onclick="mensagem()" class="botao">☕ ENVIAR ☕</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

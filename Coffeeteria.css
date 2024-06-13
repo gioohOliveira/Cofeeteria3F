@@ -1,0 +1,290 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(250, 227, 201);
+    text-align: center;
+    font-family: "Flame Sans";
+    overflow-x: hidden;
+}
+
+/*FUNDO DA PÁGINA SOBRE NÓS*/
+
+.fundo{
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;  
+    
+}
+
+/*FUNDO DA PÁGINA CARDÁPIO*/
+#fundoCardapio{
+
+    background-color: white;
+
+}
+/*FIM*/
+
+
+/*TEXTO/COLUNA DA PÁGINA SOBRE NÓS*/
+.fundo2{
+    left: 36%;
+    right: 36%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px ;
+    background-color: #d3ae83c0;
+    width: 500px;
+    border: 5px solid black;
+
+}
+/*FIM*/
+
+
+/*LOGO DO MENU DA PÁGINA*/
+.logo{
+    position: absolute;
+    left: 15%;
+    top: -10px;
+width: 108px;
+height: 108px;
+}
+/*FIM*/
+
+
+/*LOGO QUE FICA NO FOOTER*/
+.logo2{
+    width: 108px;
+    height: 108px;
+}
+/*FIM*/
+
+
+/*TAMANHO DAS IMAGENS NA PÁGINA INICIAL*/
+.Cafe{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 58vh; 
+    top: 100px;  
+}
+/*FIM*/
+
+
+/*CSS FOOTER*/
+footer{
+    background-color: rgb(106, 60, 25);
+    color:white;
+}
+/*FIM*/
+
+
+/*CSS NAV*/
+nav{
+    background: rgb(106, 60, 25);
+    height: 80px;
+    width: 100%;
+}
+   
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+/*FIM*/
+
+
+/*CSS DO MENU*/
+a.active,a:hover{
+    background-color: rgb(151, 85, 35);
+    transition: .3s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+}
+nav ul li a{
+    font-size: 16px;
+    }
+@media (max-width: 858px){
+    .checkbtn{
+    display: block;
+}
+
+}
+/*FIM*/
+
+
+/*STYLE TEXTO*/
+.texto{
+
+    text-align: center;
+    font-family: "Flame Sans";
+
+}
+/*FIM*/
+
+
+/*CSS MENU*/
+#menu{
+position: absolute;
+right: 30%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*BOTÕES DOS SLIDES
+
+#prev {
+    left: 0;
+    top:1000px;
+    font-size: 50px;
+}
+
+#next {
+    right: 0;
+    top:1000px;
+    font-size: 50px;
+}
+
+FIM*/
+
+
+
+/*CSS DOS SLIDES*/
+
+.slider{
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 400px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(94, 69, 32);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:rgb(94, 69, 32); ;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 2%;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -23%;
+
+}
+
+#radio3:checked ~ .first{
+    margin-left: -48%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -73%;
+
+}
+
+.navigation-auto div{
+border: 2px solid blue;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+/*FIM*/
